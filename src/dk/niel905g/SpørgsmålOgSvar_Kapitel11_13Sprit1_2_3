@@ -1,0 +1,76 @@
+1. Hvad er en superclass i java? Eksempel i kode og i UML.
+   A superclass defines common behavior for related subclasses. An interface can be
+   used to define common behavior for classes (including unrelated classes).
+
+2. Hvad er en subclass? Eksempel i kode og UML.
+A Java subclass is a class which inherits a method or methods from a Java superclass.
+
+3. Hvordan kan vi kalde superklassens constructor? Eksempel i kode.
+   Vis et eksempel på constructor chaining i din kode.
+   a. vis et eksempel på constructor chaining i din kode.
+   Pls. Se SuperClassSimpleGeometricObject.java hvor super(); er en default no-arg constructor.
+
+4. Hvordan kan vi kalde superklassens metoder? Eksempel i kode.
+    ex.: super.method(parameters); See TestC...etc....Comments at print!
+
+5. Hvad er forskellen mellem overriding methods og overloading methods i Java? Eksempel i kode. Overriding means to define multiple
+   methods with the same name, but different signatures. Overriding means to provide a new implementation for a method in the subclass.
+   Pls. see @override metoden i SuperClass..etc... line no: 51, toString()
+
+6. Hvad er toString() metoden i Java? Eksempel i kode. Pls. See comments in toString i SuperClass
+   toString metoden er brugt. public String toString() . So, in other words, invoking the toString()
+   method (in reality) on an object, returns a string that describes the object. As the toString method
+   prints out an @,etc. (little comprehensive!) the method is usually overridden so that it returns a
+   descriptive string of the object.
+
+SPRINT 2  Kapitel 11 og 13
+
+1. Vis et eksempel på at du overrider Object klassens toString() metode i din kode.
+   Pls. See SuperClassSimpleGeometricObject, line no: 50.
+
+2. Hvad er polymorfi i Java? Vis eksempel i din kode. See class'
+   Polymorphism in java means that a variable of a supertype can refer to a subtype object.
+   Pls. see codes in the Animal, Dog and fish classes.
+
+3. Hvad er object casting i Java? Vis eksempel i din kode. See CastingDemo. One object reference can be typecast
+   into another object reference. This is called casting object. (There is an error in my coding, which I can not
+   find... Should say on third line printed when running; The rectangle area is 1.0, but repeats circle infos..?
+
+   a. Hvad gør instanceof? Vis eksempel i din kode. Basically makes you very confused! Pls. see CastingDemo with code ex. of
+   instanceof! Which should guarentee that the object is an instance of the object its being casted to!
+
+   b. Hvad gør Object klassens equals metode? Vis eksempel i din kode. The equals methods signature is:
+      public boolean equals(object o) This method tests whether two objects are equal. The syntax for
+      invoking this is: object1.equals(object2); The default implementation of the equals method in the
+      Object class is: public boolean equals(Object obj) {
+                          return (this == obj); }
+
+4. Hvad er kan klassen ArrayList bruges til? Vis eksempel i din kode. Pls See TestArrayList, where the ArrayList is used to store
+   the variables cities, as String objects!
+   ArrayList object can ONLY be used to store a list of objects (and not primitive datatypes!).
+
+5. Du kan forhindre overriding og extending ved at skrive final foran dine klasser og/eller din metoder. Vis et eksempel i din kode
+   It is possible to prevent classes from being extended. It is done with using the FINAL modifier which can be used to indicate that
+   a class is final and cannot be be a paranet class. Code ex.: public final class A {}. The same way, a method can also be defined as
+   final, so it cannot be overridden by its subclasses. Code ex: public final void m() {}. So, a final local variable is a constant
+   inside a method.
+
+SPRINT 3 Kapitel 13
+
+1. Hvad er en abstract class? Eksempel i kode og i UML. I do not know or a superclass that is so specific that it cannot be used for
+   anything? I know that an abstact class cannot be used to create objects!
+
+   a. Hvad kan en abstract method bruges til? Eksempel i kode og i UML.Pls. See GeometricObject as well as GeometricObject.uml
+      An abstract class can contain abstract methods, which are implemented in concrete subclasses.
+
+2. Hvad er et interface? Eksempel i kode og i UML. An Interface is a class-like construct that contains only constants and abstract methods.
+   Pls. See TestEdible... Som ikke virker og jeg kan ikke finde ud af hvorfor den ikke virker. David Liang er stukket af, PEARSON uk hjemmesiden
+   virker ikke og nu klarer jeg ikke mere. Har siddet siden i fredags og arbejdet/ læst på dette her non-stop(jo, mad stops) og det er alt for
+   meget abstract for mig, på så kort tid! Så nu abstraerer jeg mig til en eller andet dejlig sydhavs palmefyldt strand, og holder resten af
+   denne søndag eftermiddag fri!
+
+   a. Hvad kan et interface bruges til? Eksempel i kode og i UML.
+
+3. Hvad  bruges Comparable interface til i Java? Eksempel i kode og i UML.
+
+4. Hvad  bruges Clonable interface til i Java? Eksempel i kode og i UML.
